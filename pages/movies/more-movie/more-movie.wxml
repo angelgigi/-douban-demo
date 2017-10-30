@@ -1,0 +1,20 @@
+<!--pages/more-movie/more-movie.wxml-->
+<!-- <import src="../star/star-template.wxml" /> -->
+<view>
+  <block wx:for="{{movie}}" wx:for-ietm="{{for-list}}">
+    <view class="movie-container">
+      <image class="movie-img" src="{{item.coverageUrl}}"></image>
+      <view><text class="txt">{{item.title}}</text></view>
+      <!-- <template is="starTemplate" data="{{stars:item.stars,average:item.average}}" /> -->
+      <view class="stars-container">
+        <view class="stars">
+          <block wx:for="{{item.stars}}" wx:for-item="i">
+            <image wx:if="{{i}}" src="../../../image/icon/star.png"></image>
+            <image wx:else="{{}}" src="../../../image/icon/none-star.png"></image>
+          </block>
+        </view>
+        <text>{{item.average}}</text>
+      </view>
+    </view>
+  </block>
+</view>

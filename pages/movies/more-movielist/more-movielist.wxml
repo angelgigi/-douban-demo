@@ -1,0 +1,7 @@
+<!--pages/movies/more-movielist/more-movielist.wxml-->
+<import src="../movie/movie-template.wxml" />
+<template name="more-movielist">
+   <block wx:for="{{movie}}" wx:for-item="{{movie}}">
+      <template is="movieTemplate" data="{{...movie}}" />
+    </block>
+</template>

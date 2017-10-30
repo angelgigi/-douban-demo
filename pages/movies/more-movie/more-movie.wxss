@@ -1,0 +1,15 @@
+/* pages/more-movie/more-movie.wxss */
+@import "../star/star-template.wxss";
+.movie-container{
+  float: left;
+  padding:20rpx 0 20rpx 36rpx;
+
+}
+.movie-img{
+  width: 200rpx;
+  height: 270rpx;
+  }
+.txt{
+  margin-bottom: 16rpx;
+  font-size:24rpx 
+}

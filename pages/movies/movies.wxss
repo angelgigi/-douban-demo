@@ -1,0 +1,7 @@
+@import "movieList/movielist-template.wxss";
+.container{
+  background-color: #f2f2f2;
+}
+ .movie-template{
+  margin-bottom: 30rpx;
+} 
